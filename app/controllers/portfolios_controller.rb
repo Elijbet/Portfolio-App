@@ -39,6 +39,17 @@ class PortfoliosController < ApplicationController
 	  end
 	end
 
+	def show
+	end
+
+	def destroy
+		@portfolio_item.destroy
+    respond_to do |format|
+      format.html { redirect_to portfolios_url, notice: 'Record was successfully destroyed.' }
+      #format.json { head :no_content }
+    end
+	end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
