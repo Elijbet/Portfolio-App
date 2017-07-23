@@ -1,24 +1,4 @@
-# README
+Please check out my Portfolio App @ https://lizaportfolio.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. created models for portfolios and blogs
+2. friendly_id gem for slugging for blog posts and portfolio items. It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.
