@@ -1,4 +1,6 @@
-Please check out my Portfolio App @ https://lizaportfolio.herokuapp.com
+First steps at creating a portfolio. Work in progress.
+
+Portfolio App @ https://lizaportfolio.herokuapp.com
 
 * created models for portfolios and blogs
 * friendly_id gem for slugging for blog posts and portfolio items. It lets you create pretty URLs and work with human-friendly strings as if they were numeric ids.

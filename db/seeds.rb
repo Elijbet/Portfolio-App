@@ -5,11 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+3.times do |topic|
+	Topic.create!(
+		title: "Topic #{topic}"
+		)
+end
+
+puts "3 Topics created"
 
 10.times do |blog|
 	Blog.create!(
 		title: "My Blog Post #{blog}", 
-		body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+		body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. ",
+		topic_id: Topic.last.id
 		)
 end
 
@@ -24,10 +32,19 @@ end
 
 puts "5 skills crated"
 
-9.times do |portfolio_item|
+8.times do |portfolio_item|
 	Portfolio.create!(
 		title: "Portfolio title: #{portfolio_item}",
-		subtitle: "My great service",
+		subtitle: "Ruby on Rails",
+		body: " Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+		main_image: "http://via.placeholder.com/600x400",
+		thumb_image: "http://via.placeholder.com/350x200"
+		)
+end
+1.times do |portfolio_item|
+	Portfolio.create!(
+		title: "Portfolio title: #{portfolio_item}",
+		subtitle: "Vue.js",
 		body: " Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
 		main_image: "http://via.placeholder.com/600x400",
 		thumb_image: "http://via.placeholder.com/350x200"

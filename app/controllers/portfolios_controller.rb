@@ -3,7 +3,7 @@ class PortfoliosController < ApplicationController
 
 
 	def index
-		@portfolio_items = Portfolio.all
+		@portfolio_items = Portfolio.ruby_on_rails
 	end
 
 	def new
